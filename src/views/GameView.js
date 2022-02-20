@@ -84,7 +84,7 @@ class GameView extends React.Component {
 							bullets[i].y >= enemies[e].y &&
 							bullets[i].y <= enemies[e].y + 45
 						) {
-							enemies[e].hp = enemies[e].hp - 1;
+							enemies[e].hp = enemies[e].hp - 10;
 							bullets.splice(i, 1);
 							if (enemies[e].hp === 0) {
 								enemies.splice(e, 1);
