@@ -39,7 +39,7 @@ export const reducer = (state = initialState, action) => {
 		case DAMAGE_PLAYER:
 			return {
 				...state,
-				lives: state.lives - 1,
+				lives: state.lives - 10,
 			};
 		case RESET_PLAYER:
 			return initialState;
